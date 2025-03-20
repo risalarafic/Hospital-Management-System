@@ -1,10 +1,10 @@
 from django.urls import path,include
 from . import views
 urlpatterns = [
-    path('', views.index), #mapping the url from the projects url to the corresponding views 
-    path('about/', views.about),
-    path('booking/', views.booking),
-    path('doctors/', views.doctors),
-    path('contact/', views.contact), 
-    path('department/', views.department),
+    path('', views.index, name='home'), #mapping the url from the projects url to the corresponding views 
+    path('about/', views.about, name='about'),
+    path('booking/', views.booking, name='booking'),
+    path('doctors/', views.doctors, name='doctors'),
+    path('contact/', views.contact, name='contact'), 
+    path('department/', views.department, name='department'),
 ]

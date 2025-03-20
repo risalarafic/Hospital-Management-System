@@ -1,0 +1,9 @@
+li:hover{
+    background-color: grey;
+    border-radius: 10px;
+}
+.card img {
+    width: 100%; /* Make the image responsive */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Prevents distortion */
+}
