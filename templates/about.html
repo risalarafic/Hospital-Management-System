@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>About</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>
-           About page
-        </h1>
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+{% extends "base.html" %}
+{% block title%}
+About
+{% endblock title%}
+
+{% block content%}
+<h1> About US </h1>
+<div class="container">
+    <div class="col-content w-full flex-grow flex flex-col">
+        <div class="para">
+With our state-of-the-art facilities, we are all set to change the face of healthcare in Kodungallur. Located at the globally acclaimed CRAFT Campus, AR Super Speciality Hospital offers a high order of integrated quality healthcare with the latest generation diagnostic facilities under one roof.
+</div>
+                                        <div class="para">
+We promise to deliver quality medical service affordable for one and all.
+</div>
+</div>
+    <img class="w-full" src="https://arhospital.in/storage/gallery/171652809356/original/arabout01_modified.webp" alt="AR Super speciality Hospital" width="500" height="500">
+
+</div>
+{% endblock content%}

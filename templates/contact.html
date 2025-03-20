@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Contact</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>
-           Contact page
-        </h1>
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+{% extends "base.html" %}
+{% block title%}
+Contact
+{% endblock title%}
+
+{% block content%}
+<div class="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg text-center border">
+    <h2 class="text-xl font-semibold text-gray-800 mb-3">Contact Us</h2>
+    <hr>
+    <p class="text-gray-600"><strong>Phone:</strong> +91 98765 43210</p>
+    <p class="text-gray-600"><strong>Email:</strong> contact@hospital.com</p>
+</div>
+
+{% endblock content%}

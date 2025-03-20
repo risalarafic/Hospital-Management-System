@@ -1,22 +1,26 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>doctors</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>
-           Doctors page
-        </h1>
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+{% extends "base.html" %}
+{% block title%}
+Doctors
+{% endblock title%}
+{% load static %}
+
+{% block content%}
+<h1 class="text-center"> Our Doctors </h1>
+<hr>
+<div class="container text-center bg-light">
+    <link rel="stylesheet" href="{% static 'home/styles.css' %}">
+{% for d in doctors %}
+<!-- <h1>{{d.doc_name}}</h1> -->
+<div class="card text-center mx-3 my-3" style="width: 18rem; display: inline-block;">
+    <img class="card-img-top" src="{{d.doc_img.url}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{d.doc_name}}</h5>
+      <p class="card-text">{{d.doc_spec}}</p>
+      <h6>{{d.dep_name}}</h6>
+
+    </div>
+  </div>
+{% endfor %}
+
+</div>
+{% endblock content%}
